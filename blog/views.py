@@ -21,11 +21,27 @@ def hello_there(request, name):
         'date':datetime.now()
     })
 
-def about(request):
-    return render(request, 'blog/about.html')
+def software(request):
+    return render(request, 'blog/software.html')
 
-def contact(request):
-    return render(request, 'blog/contact.html')
+def cloud(request):
+    return render(request, 'blog/cloud.html')
+
+def data(request):
+    return render(request, 'blog/data.html')
+
+def it_ops(request):
+    return render(request, 'blog/it_ops.html')
+
+def leadership(request):
+    return render(request, 'blog/leadership.html')
+
+def security(request):
+    return render(request, 'blog/security.html')
+
+
+
+
 
 def log_message(request):
     form = LogMessageForm(request.POST or None)
